@@ -3,6 +3,7 @@ package ensias.trippershome.models;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -33,16 +34,15 @@ public class User {
 
     @Column(name = "PAYS", length = 100)
     private String pays;
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
-            name = "USER_ROLE",
+            name = "user_role",
             joinColumns = @JoinColumn(
                     name = "ID", referencedColumnName = "ID"),
             inverseJoinColumns = @JoinColumn(
                     name = "R_ID", referencedColumnName = "R_id"))
 
-    private Role  role;
-
+    private Role role  ;
 
 
 
@@ -111,13 +111,14 @@ public class User {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRoles(Role role) {
         this.role = role;
     }
 
     public void setId(Integer id) {
         this.id = id;
     }
+
 
 
 }

@@ -12,13 +12,6 @@ public class Role {
 
     @Column(name = "ROLE", nullable = false, length = 100)
     private String role;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "USER_ROLE",
-            joinColumns = @JoinColumn(name = "ID"),
-            inverseJoinColumns = @JoinColumn(name = "R_ID")
-    )
-    private Role roles ;
 
     public String getRole() {
         return role;
@@ -34,9 +27,5 @@ public class Role {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return role;
     }
 }
