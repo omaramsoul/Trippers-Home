@@ -1,5 +1,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <title>TrippersHome</title>
@@ -7,7 +9,17 @@
 <body>
 <h1>
   TrippersHome
-  <button><a href ="/login">login</a></button>
+
 </h1>
+<c:choose>
+    <c:when test="${user==null}">
+        <button><a href ="/login">login</a></button>
+
+    </c:when>
+    <c:otherwise>
+        <button><a href ="/">logout</a></button>
+    </c:otherwise>
+</c:choose>
+
 </body>
 </html>

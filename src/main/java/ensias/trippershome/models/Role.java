@@ -1,5 +1,7 @@
 package ensias.trippershome.models;
 
+
+
 import javax.persistence.*;
 
 @Entity
