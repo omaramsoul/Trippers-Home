@@ -35,7 +35,8 @@ public class LoginController {
     public String WelcomePage(ModelMap model, @RequestParam String username, @RequestParam String password)
     {
         User user = userService.getByUsername(username);
-        if (userService.getByUsername(username)==null || !user.getMdp().equals(password))
+
+        if (user==null || !user.getMdp().equals(password))
         {
             model.put("errorMsg","the username and the password are incorrect");
             return "login";
@@ -47,6 +48,7 @@ public class LoginController {
 
             return "UserHome";
         }
+
 
 
 

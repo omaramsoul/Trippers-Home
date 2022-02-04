@@ -10,6 +10,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.FluentQuery;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
@@ -18,8 +19,13 @@ public class UserRepositoryImpl implements UserRepository {
     private EntityManager entityManager = Connection.getEntityManager();
     @Override
     public User findByUsername(String username) {
-        return (User) entityManager.createQuery("SELECT u FROM User u WHERE u.username = :username",User.class)
-                .setParameter("username", username).getSingleResult();
+        try {
+            return (User) entityManager.createQuery("FROM User  WHERE username = :username")
+                    .setParameter("username", username).getSingleResult();
+        }catch(NoResultException e)
+        {
+            return null;
+        }
     }
 
 
