@@ -4,9 +4,7 @@ package ensias.trippershome.models;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 
 
 @Entity
@@ -54,31 +52,22 @@ public class User {
                     name = "ID", referencedColumnName = "ID")
        )
     private List<Destination> destinations  ;
-//    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-//    @JoinTable(
-//            name = "D_FAVORIS",
-//            joinColumns = @JoinColumn(
-//                    name = "ID", referencedColumnName = "ID"),
-//            inverseJoinColumns = @JoinColumn(
-//                    name = "D_ID", referencedColumnName = "D_ID"))
-//
-//    private List<Destination>  destinationsFavoris ;
 
+    @ManyToMany( cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "D_FAVORIS",
+            joinColumns = @JoinColumn(
+                    name = "ID", referencedColumnName = "ID"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "D_ID", referencedColumnName = "D_ID"))
 
+    private List<Destination>  destinationsFavoris ;
 
-
-
-    public List<Destination> getDestinations() {
-        return destinations;
+    public List<Destination> getDestinationsFavoris() {
+        return destinationsFavoris;
     }
 
-    public void setDestinations(List<Destination> destinations) {
-        this.destinations = destinations;
-    }
 
-    public void setRole(Role role) {
-        this.role = role;
-    }
 
 
 

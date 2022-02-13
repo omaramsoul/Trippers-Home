@@ -18,6 +18,7 @@
     </c:when>
     <c:otherwise>
         <button><a href ="/">logout</a></button>
+        <button><a href ="/destinations">destinations</a></button>
     </c:otherwise>
 </c:choose>
 
