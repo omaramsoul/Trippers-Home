@@ -1,5 +1,6 @@
 package ensias.trippershome.repositories.impl;
 
+import ensias.trippershome.models.Destination;
 import ensias.trippershome.models.User;
 import ensias.trippershome.repositories.Connection;
 import ensias.trippershome.repositories.UserRepository;
