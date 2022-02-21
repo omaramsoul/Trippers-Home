@@ -168,4 +168,16 @@ public class DestinationRepositoryImpl implements DestinationRepository {
     public <S extends Destination, R> R findBy(Example<S> example, Function<FluentQuery.FetchableFluentQuery<S>, R> queryFunction) {
         return null;
     }
+
+    @Override
+    public List<Destination> findByUser(User user) {
+        try {
+            return (List<Destination>)entityManager.createQuery("FROM Destination d where d.id1.username = :user ")
+                    .setParameter("user", user.getUsername())
+                    .getResultList();
+        }catch(NoResultException e)
+        {
+            return null;
+        }
+    }
 }

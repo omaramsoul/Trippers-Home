@@ -28,8 +28,9 @@ public class DestinationController {
     {
         List<Destination> destinationList = destinationService.getAll();
 
-
+         model.put("title", " Les destinations");
             model.put("destinations",destinationList);
+
 
         if (destinationList == null) {
             model.put("message", "list is empty");
