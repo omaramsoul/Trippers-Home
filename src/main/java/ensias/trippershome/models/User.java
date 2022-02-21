@@ -53,7 +53,7 @@ public class User {
        )
     private List<Destination> destinations  ;
 
-    @ManyToMany( cascade = CascadeType.ALL)
+    @ManyToMany()
     @JoinTable(
             name = "D_FAVORIS",
             joinColumns = @JoinColumn(
@@ -68,7 +68,9 @@ public class User {
     }
 
 
-
+    public List<Destination> getDestinations() {
+        return destinations;
+    }
 
 
 

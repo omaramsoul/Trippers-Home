@@ -1,5 +1,6 @@
 package ensias.trippershome.controllers;
 
+import ensias.trippershome.Security.Context;
 import ensias.trippershome.models.User;
 
 import ensias.trippershome.services.UserService;
@@ -37,6 +38,7 @@ public class LoginController {
         }
         else
         {
+            Context.setUsername(username);
             model.put("user",user);
             return "index";
         }

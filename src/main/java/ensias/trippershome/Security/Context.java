@@ -8,4 +8,8 @@ public class Context {
     public static String getUsername() {
         return username;
     }
+
+    public static void setUsername(String usern) {
+        username = usern;
+    }
 }

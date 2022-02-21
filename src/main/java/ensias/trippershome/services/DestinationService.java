@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface DestinationService {
     List<Destination> getAll();
+
+    void save(Destination dest);
 }

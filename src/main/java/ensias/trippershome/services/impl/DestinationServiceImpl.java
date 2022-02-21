@@ -16,4 +16,9 @@ public class DestinationServiceImpl implements DestinationService {
     public List<Destination> getAll() {
         return destinationRepository.findAll();
     }
+
+    @Override
+    public void save(Destination dest) {
+        destinationRepository.save(dest);
+    }
 }

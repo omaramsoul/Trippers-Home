@@ -19,6 +19,8 @@
     <c:otherwise>
         <button><a href ="/">logout</a></button>
         <button><a href ="/destinations">destinations</a></button>
+        <button><a href ="/destinations_favoris">destinations favorites</a></button>
+        <button><a href ="/my_destinations">mes destinations</a></button>
     </c:otherwise>
 </c:choose>
 
