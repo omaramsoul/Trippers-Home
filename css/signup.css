@@ -1,0 +1,131 @@
+.imageVal {
+    width: 450px;
+}
+
+.inputField {
+    border-radius: 50px;
+    border: 1px solid #FF725E;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    outline: none;
+    color: black;
+    box-shadow: 0px 0px 6px 0px #FF725E;
+    width: 350px;
+}
+
+::placeholder {
+    color: #D7D7D7;
+    opacity: 0.8;
+}
+
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: 'Poppins', sans-serif ;
+}
+
+.signUpBtn {
+    border: 1px solid #FF725E;
+    border-radius: 50px;
+    width: 150px;
+    background-color: #FF725E;
+    color: white;
+    padding: 6px 20px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.signUpBtn:focus {
+    outline: none;
+}
+
+.signText {
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 500;
+}
+
+.signTextUp {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.loginField {
+    color: #FFC100;
+    text-decoration-line: none;
+}
+
+.loginField:hover {
+    text-decoration: none;
+    color: #FFC100;
+}
+
+.contentDiv {
+    margin-top: 30px;
+}
+
+.imageDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signUpForm {
+    margin-top: 30px;
+    text-align: center;
+}
+
+ @media ( max-width: 992px) {
+    .imageVal {
+        width: 350px;
+    }
+
+    .imageDiv {
+        margin-top: 60px;
+    }
+    
+    .inputField {
+        width: 300px;
+    }
+ }
+
+@media ( max-width: 768px) {
+
+    .imageVal {
+        width: 250px;
+    }
+
+    .imageDiv {
+        margin-top: 60px;
+    }
+    
+    .inputField {
+        width: auto;
+    }
+}
+
+@media ( max-width: 576px) {
+
+    .imageVal {
+        display: none;
+    }
+
+    .imageDiv {
+        margin-top: 60px;
+    }
+    
+    .inputField {
+        width: 300px;
+    }
+
+    .signUpForm {
+        margin-top: -40px;
+    }
+}
+
+.footerDiv {
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.footerLogo {
+    width: 50px;
+}
