@@ -44,5 +44,10 @@ public class LoginController {
         }
 
     }
+    @RequestMapping(value= "/logout")
+    public String home() {
+        Context.setUsername(null);
+        return "index";
+    }
 
 }
