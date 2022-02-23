@@ -1,0 +1,72 @@
+.Slogan {
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+    line-height: 55px; 
+}
+
+.subSlogan {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.morocco {
+    color: #FFC100;
+    font-weight: 500;
+} 
+
+.exploreBtn {
+    border: 1px solid #FF725E;
+    border-radius: 50px;
+    width: 150px;
+    background-color: white;
+    color: #FF725E;
+    padding: 6px 20px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 90px;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.exploreBtn:focus {
+    outline: none;
+}
+
+.exploreBtn:hover {
+    background-color: #FF725E;
+    color: white;
+    transition: 0.3s;
+}
+
+.imageSloganVal {
+    width: 500px;
+}
+
+.sloganTextDiv {
+    padding: 80px 50px 0px 80px;
+}
+
+.sloganContainer {
+    margin: 50px auto;
+
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.description {
+    font: 300;
+    font-size: 15px;
+    color: #9D9D9D;
+    margin-top: -15px;
+    opacity: 0.7;
+}
+
+.titleContainer {
+    text-align: center;
+}

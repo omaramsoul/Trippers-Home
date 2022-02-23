@@ -1,0 +1,54 @@
+.imageDestVal {
+    width: 550px;
+}
+
+.destText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.subDestText {
+    font: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.morocco2 {
+    color: #FF725E;
+}
+
+.addDestTextDiv {
+    padding-top: 100px;
+}
+
+.addDestBtn {
+    border: 1px solid #FF725E;
+    border-radius: 50px;
+    width: 200px;
+    background-color: white;
+    color: #FF725E;
+    padding: 6px 20px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 90px;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.addDestBtn:focus {
+    outline: none;
+}
+
+.addDestBtn:hover {
+    background-color: #FF725E;
+    color: white;
+    transition: 0.3s;
+}
+
+.addDestContainer {
+    margin-top: -50px;
+}

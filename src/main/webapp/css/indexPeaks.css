@@ -1,0 +1,56 @@
+.peakCard {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.peakImage {
+    width: 250px;
+}
+
+.peakName {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mountain {
+    width: 17px;
+    margin-top: -5px;
+    margin-left: 1px;
+    margin-right: 5px;
+}
+
+.metrs {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.atittude {
+    background-color: #37474F;
+    border-radius: 0px 20px 20px 0px;
+    width: 95px;
+    padding: 3px 10px ;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 21.3px;
+}
+
+.peakCard {
+    line-height: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.titleContainer2 {
+    text-align: center;
+    margin-top: 50px;
+}
