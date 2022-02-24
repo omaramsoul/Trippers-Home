@@ -58,9 +58,15 @@ public class DestinationRepositoryImpl implements DestinationRepository {
     public void save(Destination destination) {
         EntityTransaction et = entityManager.getTransaction();
 
-        entityManager.createNativeQuery("INSERT INTO Destination(D_NOM,ID,destinations_d_id) Values (:nom,:id,0)")
+        entityManager.createNativeQuery("INSERT INTO Destination(D_NOM,ID,D_ACTIVITE,D_CAMPING,D_DATE_CR,D_DIVERS,D_EAUPOT,D_EPICERIE,D_IMG_1,destinations_d_id) Values (:nom,:id,:activite,:D_CAMPING,:D_DATE_CR,:D_DIVERS,:D_EAUPOT,:D_EPICERIE,:D_IMG_1,0)")
                 .setParameter("nom", destination.getDNom())
                 .setParameter("id", destination.getId1().getId())
+                .setParameter("activite", destination.getDActivite())
+                .setParameter("D_CAMPING", destination.getDCamping())
+                .setParameter("D_EPICERIE", destination.getDEpicerie())
+                .setParameter("D_EAUPOT", destination.getDEaupot())
+                .setParameter("D_IMG_1", destination.getDImg1())
+                .setParameter("D_DIVERS", destination.getDDivers())
                 .executeUpdate();
                 et.commit();
 

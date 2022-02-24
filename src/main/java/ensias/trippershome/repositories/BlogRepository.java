@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface BlogRepository {
     public List<Blog> findAll();
+    public void save(Blog blog);
 }

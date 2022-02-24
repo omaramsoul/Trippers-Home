@@ -50,16 +50,19 @@ public class DestinationController {
     }
 
     @RequestMapping(value= "/add_destination" ,method = RequestMethod.GET)
-    public String loginPage(Model model)
+    public String add(Model model)
     {
 
         return "addDestination";
     }
 
     @RequestMapping(value= "/add_destination" ,method = RequestMethod.POST)
-    public String WelcomePage(ModelMap model, @RequestParam String nom, @RequestParam String ville,@RequestParam double la,@RequestParam double lo,
+    public String add(ModelMap model, @RequestParam String nom, @RequestParam String ville,@RequestParam double la,@RequestParam double lo,
                               @RequestParam byte[] img1,@RequestParam String transport,@RequestParam String camping,@RequestParam String eaupot,@RequestParam String epicerie,@RequestParam String activite,@RequestParam String divers)
     {
+
+
+
         Destination dest= new Destination();
         dest.setDNom(nom);
         dest.setDVille(ville);

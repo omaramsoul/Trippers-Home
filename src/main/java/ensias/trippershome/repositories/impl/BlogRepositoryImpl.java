@@ -11,6 +11,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.FluentQuery;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.persistence.NoResultException;
 import java.util.List;
 import java.util.Optional;
@@ -27,6 +28,19 @@ public class BlogRepositoryImpl implements BlogRepository {
         {
             return null;
         }
+
+    }
+
+    @Override
+    public void save(Blog blog) {
+        EntityTransaction et = entityManager.getTransaction();
+
+        entityManager.createNativeQuery("INSERT INTO blog(TITRE,ID,SUJET) Values (:titre,:id,:sujet)")
+                .setParameter("titre", blog.getTitre())
+                .setParameter("id", blog.getId1().getId())
+                .setParameter("sujet", blog.getSujet())
+                .executeUpdate();
+        et.commit();
 
     }
 

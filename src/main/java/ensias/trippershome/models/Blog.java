@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
-@Table(name = "BLOG")
+@Table(name = "blog")
 public class Blog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,12 +23,20 @@ public class Blog {
     @Column(name = "SUJET", nullable = false)
     private String sujet;
 
-    @Column(name = "B_DATE_CR", nullable = false)
-    private Instant bDateCr;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "ID", nullable = false)
     private User id1;
+
+    public Blog(String titre, String sujet, User user) {
+        this.titre  = titre;
+        this.sujet=sujet;
+        id1 = user;
+    }
+
+    public Blog() {
+
+    }
 
     public User getId1() {
         return id1;
@@ -38,13 +46,7 @@ public class Blog {
         this.id1 = id1;
     }
 
-    public Instant getBDateCr() {
-        return bDateCr;
-    }
 
-    public void setBDateCr(Instant bDateCr) {
-        this.bDateCr = bDateCr;
-    }
 
     public String getSujet() {
         return sujet;
