@@ -34,6 +34,11 @@ public class DestinationController {
 
          model.put("title", " Les destinations");
             model.put("destinations",destinationList);
+          Destination destination = new Destination();
+          destination.setDNom("lolo");
+          User user = userService.getByUsername("ali");
+          destination.setId1(user);
+          destinationService.save(destination);
 
 
         if (destinationList == null) {

@@ -1,9 +1,9 @@
 package ensias.trippershome.repositories.impl;
 
-import ensias.trippershome.models.Role;
-import ensias.trippershome.models.User;
+import ensias.trippershome.models.Blog;
+import ensias.trippershome.models.Destination;
+import ensias.trippershome.repositories.BlogRepository;
 import ensias.trippershome.repositories.Connection;
-import ensias.trippershome.repositories.RoleRepository;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,18 +16,19 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 
-public class RoleRepositoryImpl implements RoleRepository {
+public class BlogRepositoryImpl implements BlogRepository {
     private EntityManager entityManager = Connection.getEntityManager();
-
     @Override
-    public Role getRoleByRole(String role) {
+    public List<Blog> findAll() {
         try {
-            return (Role) entityManager.createQuery("FROM Role  WHERE role = :role")
-                    .setParameter("role", role).getSingleResult();
+        return  (List<Blog>)entityManager.createQuery("FROM Blog  ")
+                .getResultList();
         }catch(NoResultException e)
         {
             return null;
         }
+
     }
+
 
 }

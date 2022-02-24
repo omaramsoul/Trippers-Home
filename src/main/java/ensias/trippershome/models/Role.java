@@ -5,7 +5,7 @@ package ensias.trippershome.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ROLE")
+@Table(name = "\"ROLE\"")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

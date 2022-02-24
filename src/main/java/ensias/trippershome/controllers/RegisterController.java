@@ -46,19 +46,18 @@ public class RegisterController {
         user.setUsername(username);
         user.setEmail(email);
         user.setMdp(password);
-        Role role =roleService.findByRole("TRIPPER");
-        user.setRoles(role);
-        String message = Validate.accept(user,password2);
-        if (message !=null)
-        {
-            model.put("msg",message);
-            return "register";
-        }else {
+
+       // String message = Validate.accept(user,password2);
+//        if (message !=null)
+//        {
+//            model.put("msg",message);
+//            return "register";
+//        }else {
             userService.save(user);
 
             Context.setUsername(username);
             return "index";
-        }
+//        }
     }
 
 }

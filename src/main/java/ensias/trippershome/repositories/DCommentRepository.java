@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface DCommentRepository extends JpaRepository<DComment, Integer> {
+public interface DCommentRepository  {
     List<DComment>  findDCommentByDestination(Destination destination);
 }

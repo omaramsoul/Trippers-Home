@@ -30,5 +30,6 @@ public class DestinationServiceImpl implements DestinationService {
     @Override
     public void save(Destination dest) {
         destinationRepository.save(dest);
+
     }
 }

@@ -27,10 +27,10 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 align-items-center">
             <li class="nav-item ">
-                <a class="nav-link item" href="#">Home</a>
+                <a class="nav-link item" href="/">Home</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link item" href="#">Destinations</a>
+                <a class="nav-link item" href="/destinations">Destinations</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link item" href="#">Bloog</a>
@@ -39,15 +39,15 @@
                 <a class="nav-link item" href="#">Contact us</a>
             </li>
             <li class="nav-item navRegistration">
-                <a class="nav-link item" href="#">Log in</a>
+                <a class="nav-link item" href="/login">Log in</a>
             </li>
             <li class="nav-item navRegistration">
-                <a class="nav-link item" href="#">Sign up</a>
+                <a class="nav-link item" href="/register">Sign up</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <button class="btn logBtn resgistration my-2 my-sm-0" type="submit">Log in</button>
-            <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit">Sign up</button>
+            <button class="btn logBtn resgistration my-2 my-sm-0" type="submit"><a href="/login"> Log in</a></button>
+            <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="/register">Sign up</a></button>
         </form>
     </div>
 </nav>

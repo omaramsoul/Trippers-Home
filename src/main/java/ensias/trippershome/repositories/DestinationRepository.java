@@ -6,7 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface DestinationRepository extends JpaRepository<Destination,Long> {
+public interface DestinationRepository  {
+    List<Destination> findAll();
     List<Destination> findByUser(User user);
     Destination findByName(String name);
+    void save(Destination destination);
 }
