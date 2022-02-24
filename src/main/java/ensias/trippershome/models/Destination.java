@@ -2,6 +2,7 @@ package ensias.trippershome.models;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.List;
 
 @Entity
 @Table(name = "DESTINATION")
@@ -59,10 +60,24 @@ public class Destination {
     @Column(name = "D_DATE_CR", nullable = false)
     private Instant dDateCr;
 
+    public List<DComment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<DComment> comments) {
+        this.comments = comments;
+    }
+
     @ManyToOne(optional = false)
     @JoinColumn(name = "ID", nullable = false)
     private User id1;
-
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "DCOMMENT",
+            joinColumns = @JoinColumn(
+                    name = "D_ID", referencedColumnName = "D_ID")
+    )
+    private List<DComment> comments ;
     public User getId1() {
         return id1;
     }

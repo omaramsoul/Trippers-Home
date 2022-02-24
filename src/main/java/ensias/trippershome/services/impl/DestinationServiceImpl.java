@@ -21,6 +21,11 @@ public class DestinationServiceImpl implements DestinationService {
         return destinationRepository.findByUser(user);
     }
 
+    @Override
+    public Destination getByName(String name) {
+        return destinationRepository.findByName(name);
+    }
+
 
     @Override
     public void save(Destination dest) {

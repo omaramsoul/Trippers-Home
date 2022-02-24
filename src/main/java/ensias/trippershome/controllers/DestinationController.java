@@ -1,12 +1,15 @@
 package ensias.trippershome.controllers;
 
 import ensias.trippershome.Security.Context;
+import ensias.trippershome.models.DComment;
 import ensias.trippershome.models.Destination;
 import ensias.trippershome.models.User;
 import ensias.trippershome.repositories.DestinationRepository;
 import ensias.trippershome.repositories.UserRepository;
+import ensias.trippershome.services.DCommentService;
 import ensias.trippershome.services.DestinationService;
 import ensias.trippershome.services.UserService;
+import ensias.trippershome.services.impl.DCommentServiceImpl;
 import ensias.trippershome.services.impl.DestinationServiceImpl;
 import ensias.trippershome.services.impl.UserServiceImpl;
 import org.springframework.stereotype.Controller;
@@ -22,6 +25,7 @@ import java.util.List;
 public class DestinationController {
     DestinationService destinationService= new DestinationServiceImpl();
     UserService userService= new UserServiceImpl();
+    DCommentService dCommentService = new DCommentServiceImpl();
 
     @RequestMapping(value= "/destinations")
     public String destinations(ModelMap model)
@@ -70,6 +74,23 @@ public class DestinationController {
         model.put("errorMsg","The destination is added");
 
             return "addDestination";
+
+
+    }
+    @RequestMapping(value= "/search" ,method = RequestMethod.GET)
+    public String comments(Model model)
+    {
+
+        return "search_comment";
+    }
+
+    @RequestMapping(value= "/search" ,method = RequestMethod.POST)
+    public String comments(ModelMap model, @RequestParam String dest){
+        Destination destination= destinationService.getByName(dest);
+        List<DComment> comments =dCommentService.getByDestination(destination);
+        model.put("comments",comments);
+
+        return "comments";
 
 
     }

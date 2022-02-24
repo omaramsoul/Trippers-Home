@@ -180,4 +180,16 @@ public class DestinationRepositoryImpl implements DestinationRepository {
             return null;
         }
     }
+
+    @Override
+    public Destination findByName(String name) {
+        try {
+            return (Destination)entityManager.createQuery("FROM Destination  where  dNom = :name ")
+                    .setParameter("name", name)
+                    .getSingleResult();
+        }catch(NoResultException e)
+        {
+            return null;
+        }
+    }
 }

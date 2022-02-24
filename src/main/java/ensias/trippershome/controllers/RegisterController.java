@@ -4,10 +4,13 @@ import ensias.trippershome.Security.Context;
 import ensias.trippershome.Security.Validate;
 import ensias.trippershome.models.Role;
 import ensias.trippershome.models.User;
+import ensias.trippershome.repositories.UserRepository;
 import ensias.trippershome.services.RoleService;
 import ensias.trippershome.services.UserService;
 import ensias.trippershome.services.impl.RoleServiceImpl;
+
 import ensias.trippershome.services.impl.UserServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -31,7 +34,7 @@ public class RegisterController {
     public String RegisterPage(Model model)
     {
 
-        return "/WEB-INF/jsp/register.jsp";
+        return "register";
     }
 
     @RequestMapping(value= "/register" ,method = RequestMethod.POST)
@@ -49,9 +52,10 @@ public class RegisterController {
         if (message !=null)
         {
             model.put("msg",message);
-            return "/WEB-INF/jsp/register.jsp";
+            return "register";
         }else {
             userService.save(user);
+
             Context.setUsername(username);
             return "index";
         }

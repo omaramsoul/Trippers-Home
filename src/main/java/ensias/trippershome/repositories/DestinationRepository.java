@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface DestinationRepository extends JpaRepository<Destination,Long> {
     List<Destination> findByUser(User user);
+    Destination findByName(String name);
 }

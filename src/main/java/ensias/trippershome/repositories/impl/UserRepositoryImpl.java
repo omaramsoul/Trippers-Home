@@ -1,9 +1,9 @@
 package ensias.trippershome.repositories.impl;
 
-import ensias.trippershome.models.Destination;
 import ensias.trippershome.models.User;
 import ensias.trippershome.repositories.Connection;
 import ensias.trippershome.repositories.UserRepository;
+import org.hibernate.HibernateException;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -79,6 +79,21 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public void deleteAll() {
+
+    }
+
+
+    public  void saveUser(User user) {
+
+        entityManager.createNativeQuery("INSERT INTO User (username,email,mdp) Values (:username,:email,:mdp)")
+                .setParameter("username", user.getUsername())
+                .setParameter("email", user.getEmail())
+                .setParameter("mdp", user.getMdp())
+                .executeUpdate();
+
+        for (int i=0;i<10;i++)
+        System.out.println("hello");
+
 
     }
 
