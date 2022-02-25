@@ -60,7 +60,6 @@
                 <form class="form-inline my-2 my-lg-0">
                     <button class="btn logBtn resgistration my-2 my-sm-0" type="submit"><a href="\logout">Logout</a> </button>
                     <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="\destinations_favoris">favoris</a></button>
-                    <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="\my_destinations">Compte</a></button>
                 </form>
                 <!--                    <button><a href ="/">logout</a></button>-->
                 <!--                    <button><a href ="/destinations">destinations</a></button>-->
@@ -94,52 +93,12 @@
 </div>
 
 <div class="container recPlacesContainer">
+    <% int j=0;%>
     <div class="row">
-        <div class="recommendedPlaceCard col-xl-3 col-md-2">
-            <div class="imageCard">
-                <div class="ratting">
-                    <span class="starNumber">3.5</span>
-                    <span>
-                <img src="${pageContext.request.contextPath}/img/star.png" alt="star" class="star">
-              </span>
-                </div>
-                <a href="#">
-                    <img src="${pageContext.request.contextPath}/img/Screen Shot 2022-01-29 at 05.06 1.png" alt="Aguelmam Azegza" class="placeImage"><br>
-                </a>
-            </div>
-            <a href="#" class="placeName">Aguelmam, <br> Khenifra</a>
-        </div>
+        <c:forEach items="${destinations}" var="item">
 
-        <div class="recommendedPlaceCard col-xl-3 col-md-2">
-            <div class="imageCard">
-                <div class="ratting">
-                    <span class="starNumber">4.5</span>
-                    <span>
-                <img src="/img/star.png" alt="star" class="star">
-              </span>
-                </div>
-                <a href="#">
-                    <img src="${pageContext.request.contextPath}/img/Screen Shot 2022-01-29 at 05.23 1.png" alt="Ait ben haddou, Ouarzazate" class="placeImage"><br>
-                </a>
-            </div>
-            <a href="#" class="placeName">Ait Ben Haddou, <br> Ouarzazate</a>
-        </div>
-
-        <div class="recommendedPlaceCard col-xl-3 col-md-2">
-            <div class="imageCard">
-                <div class="ratting">
-                    <span class="starNumber">4</span>
-                    <span>
-                <img src="/img/star.png" alt="star" class="star">
-              </span>
-                </div>
-                <a href="#">
-                    <img src="${pageContext.request.contextPath}/img/Screen Shot 2022-01-29 at 05.29 1.png" alt="Ait Bouguemez, Azilal" class="placeImage"><br>
-                </a>
-            </div>
-            <a href="#" class="placeName">Ait Bouguemez, <br> Azilal</a>
-        </div>
-
+        <%  if(j<4){ %>
+        <%  j++;%>
         <div class="recommendedPlaceCard col-xl-3 col-md-2">
             <div class="imageCard">
                 <div class="ratting">
@@ -149,11 +108,19 @@
               </span>
                 </div>
                 <a href="#">
-                    <img src="${pageContext.request.contextPath}/img/Screen Shot 2022-01-29 at 05.36 1.png" alt="Belyounech, Fnideq" class="placeImage"><br>
+                    <img src="${pageContext.request.contextPath}/dimg/<c:out value="${item.dNom}"/>.jpg" alt="Aguelmam Azegza" class="placeImage"><br>
                 </a>
             </div>
-            <a href="#" class="placeName">Belyounech, <br> Fnideq</a>
+            <a href="#" class="placeName"><c:out value="${item.DNom}" /> , <br> <c:out value="${item.dVille}" /> </a>
         </div>
+            <%}%>
+
+        </c:forEach>
+
+
+
+
+
     </div>
 </div>
 
@@ -171,7 +138,7 @@
             <p class="destText">Let's discover <br> <span class="morocco2">Morocco</span> !</p>
             <p class="subDestText">Share your favourite place with the community ..</p>
             <div class="btnContainer">
-                <button class="addDestBtn">Add destination</button>
+                <button class="addDestBtn"><a href="/add_destination"> Add destination</a></button>
             </div>
         </div>
     </div>
@@ -254,38 +221,29 @@
 
 <div class="container bolgsContainer">
     <div class="row">
-        <div class="blogCard col-xl-4 col-md-3">
-            <div class="blogBorder">
-                <a href="#"><img src="${pageContext.request.contextPath}/img/meilleur-sac-à-dos-de-randonnée 1.png" alt="blog image" class="blogImage"></a>
-                <a href="#"><p class="blogTitle">How to prepare your backpack ?</p></a>
-                <a href="#"><p class="blogDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit . Integer nec odio. Praesent libero...</p></a>
-                <div class="creatorDiv">
-                    <span class="blogAuthor">By : <a href="#" class="creator">Mouad MADOUN</a></span>
-                </div>
-            </div>
-        </div>
 
-        <div class="blogCard col-xl-4 col-md-3">
-            <div class="blogBorder">
-                <a href="#"><img src="${pageContext.request.contextPath}/img/7351697482_9638d325e1_z 1.png" alt="blog image" class="blogImage"></a>
-                <a href="#"><p class="blogTitle">Which refuge to choose in Toubkal, CAF or Mouflons ?</p></a>
-                <a href="#"><p class="blogDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit . Integer nec odio. Praesent libero...</p></a>
-                <div class="creatorDiv">
-                    <span class="blogAuthor">By : <a href="#" class="creator">Fatim Zehra ERRAMI</a></span>
-                </div>
-            </div>
-        </div>
+            <% int i=0;%>
 
+
+        <c:forEach items="${blogs}" var="item">
+
+        <%  if(i<3){ %>
+            <%  i++;%>
         <div class="blogCard col-xl-4 col-md-3">
             <div class="blogBorder">
-                <a href="#"><img src="${pageContext.request.contextPath}/img/S20_MS_Brenta_1280x1280@2x 1.png" alt="blog image" class="blogImage"></a>
-                <a href="#"><p class="blogTitle">Advices for a successful trip</p></a>
-                <a href="#"><p class="blogDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit . Integer nec odio. Praesent libero...</p></a>
+
+                <a href="#"><p class="blogTitle"><c:out value="${item.titre}" /></p></a>
+                <a href="#"><p class="blogDescription"><c:out value="${item.sujet}"></c:out></p></a>
                 <div class="creatorDiv">
-                    <span class="blogAuthor">By : <a href="#" class="creator">Hicham AZEROUAL</a></span>
+
+                    <span class="blogAuthor">By : <a href="#" class="creator"><c:out value="${item.id1.username}"></c:out></a></span>
                 </div>
             </div>
         </div>
+            <%}%>
+
+        </c:forEach>
+
 
     </div>
 </div>

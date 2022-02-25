@@ -12,7 +12,7 @@
 <table>
     <c:forEach items="${destinations}" var="item">
         <tr>
-            <td><c:out value="${item.DNom}" /></td>
+            <td><a href="/destinations/<c:out value="${item.DNom}"/>"> <c:out value="${item.DNom}" /> </a></td>
         </tr>
     </c:forEach>
 </table>

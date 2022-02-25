@@ -8,6 +8,7 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.FluentQuery;
 
 import javax.persistence.EntityManager;
@@ -29,6 +30,8 @@ public class DestinationRepositoryImpl implements DestinationRepository {
             return null;
         }
     }
+
+
 
     @Override
     public List<Destination> findByUser(User user) {
@@ -58,8 +61,9 @@ public class DestinationRepositoryImpl implements DestinationRepository {
     public void save(Destination destination) {
         EntityTransaction et = entityManager.getTransaction();
 
-        entityManager.createNativeQuery("INSERT INTO Destination(D_NOM,ID,D_ACTIVITE,D_CAMPING,D_DATE_CR,D_DIVERS,D_EAUPOT,D_EPICERIE,D_IMG_1,destinations_d_id) Values (:nom,:id,:activite,:D_CAMPING,:D_DATE_CR,:D_DIVERS,:D_EAUPOT,:D_EPICERIE,:D_IMG_1,0)")
+        entityManager.createNativeQuery("INSERT INTO Destination(D_NOM,D_VILLE,ID,D_ACTIVITE,D_CAMPING,D_DIVERS,D_EAUPOT,D_EPICERIE,D_IMG_1,D_TRANSPORT,destinations_d_id) Values (:nom,:ville,:id,:activite,:D_CAMPING,:D_DIVERS,:D_EAUPOT,:D_EPICERIE,:transport,:D_IMG_1,0)")
                 .setParameter("nom", destination.getDNom())
+                .setParameter("ville", destination.getDVille())
                 .setParameter("id", destination.getId1().getId())
                 .setParameter("activite", destination.getDActivite())
                 .setParameter("D_CAMPING", destination.getDCamping())
@@ -67,6 +71,7 @@ public class DestinationRepositoryImpl implements DestinationRepository {
                 .setParameter("D_EAUPOT", destination.getDEaupot())
                 .setParameter("D_IMG_1", destination.getDImg1())
                 .setParameter("D_DIVERS", destination.getDDivers())
+                .setParameter("transport", destination.getDTransport())
                 .executeUpdate();
                 et.commit();
 

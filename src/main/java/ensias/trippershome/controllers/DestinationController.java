@@ -15,6 +15,7 @@ import ensias.trippershome.services.impl.UserServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -34,12 +35,6 @@ public class DestinationController {
 
          model.put("title", " Les destinations");
             model.put("destinations",destinationList);
-          Destination destination = new Destination();
-          destination.setDNom("lolo");
-          User user = userService.getByUsername("ali");
-          destination.setId1(user);
-          destinationService.save(destination);
-
 
         if (destinationList == null) {
             model.put("message", "list is empty");
@@ -57,8 +52,8 @@ public class DestinationController {
     }
 
     @RequestMapping(value= "/add_destination" ,method = RequestMethod.POST)
-    public String add(ModelMap model, @RequestParam String nom, @RequestParam String ville,@RequestParam double la,@RequestParam double lo,
-                              @RequestParam byte[] img1,@RequestParam String transport,@RequestParam String camping,@RequestParam String eaupot,@RequestParam String epicerie,@RequestParam String activite,@RequestParam String divers)
+    public String add(ModelMap model, @RequestParam String nom, @RequestParam String ville
+                            ,@RequestParam String transport,@RequestParam String camping,@RequestParam String eaupot,@RequestParam String epicerie,@RequestParam String activite,@RequestParam String divers)
     {
 
 
@@ -66,9 +61,6 @@ public class DestinationController {
         Destination dest= new Destination();
         dest.setDNom(nom);
         dest.setDVille(ville);
-        dest.setLocalLa(la);
-        dest.setLocalLo(lo);
-        dest.setDImg1(img1);
         dest.setDTransport(transport);
         dest.setDCamping(camping);
         dest.setDEaupot(eaupot);
@@ -99,6 +91,21 @@ public class DestinationController {
         model.put("comments",comments);
 
         return "comments";
+
+
+    }
+
+    @RequestMapping(value= "/destinations/{name}")
+    public String destination_info(ModelMap model,  @PathVariable("name") String name){
+        Destination destination= destinationService.getByName(name);
+        model.put("destination",destination);
+        List<DComment> comments =dCommentService.getByDestination(destination);
+        model.put("comments",comments);
+        if (Context.getUsername()==null)
+        {
+            return "login";
+        }
+        return "destination";
 
 
     }

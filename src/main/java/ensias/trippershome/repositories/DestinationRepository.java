@@ -10,5 +10,6 @@ public interface DestinationRepository  {
     List<Destination> findAll();
     List<Destination> findByUser(User user);
     Destination findByName(String name);
+
     void save(Destination destination);
 }
