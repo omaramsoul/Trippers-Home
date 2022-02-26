@@ -24,33 +24,32 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="${pageContext.request.contextPath}/img/logo.png" class="logo"></a>
+    <a class="navbar-brand" href="#"><img src="/img/logo.png" class="logo"></a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 align-items-center">
             <li class="nav-item ">
-                <a class="nav-link item" href="/">Home</a>
+                <a class="nav-link item" href="#">Home</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link item" href="/destinations">Destinations</a>
+                <a class="nav-link item" href="#">Destinations</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link item" href="/blogs">Bloog</a>
+                <a class="nav-link item" href="#">Bloog</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link item" href="#">Contact us</a>
             </li>
             <li class="nav-item navRegistration">
-                <a class="nav-link item" href="/logout">Logout</a>
+                <a class="nav-link item" href="#">Log in</a>
             </li>
             <li class="nav-item navRegistration">
-                <a class="nav-link item" href="/destinations_favoris">favoris</a>
+                <a class="nav-link item" href="#">Sign up</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="\destinations_favoris">Favoris</a></button>
-            <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="\my_destinations">Mes destinations</a></button>
-            <button class="btn logBtn resgistration my-2 my-sm-0" type="submit"><a href="\logout">Logout</a> </button>
+            <button class="btn logBtn resgistration my-2 my-sm-0" type="submit"><a class="nav-link item" href="/logout">Logout</a></button>
+            <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-link item" href="/destinations_favoris">favoris</a></button>
         </form>
     </div>
 </nav>
@@ -62,7 +61,7 @@
 
 <div class="container imageConatiner">
     <div class="row">
-        <form action="#" class="col-xl-12 formDestContainer" method="post">
+        <form action="#" class="col-xl-12 formDestContainer">
 
             <div class="fieldDiv">
                 <label for="destName" class="formLabel">Destination name : <span class="etoile">*</span></label><br>
@@ -72,7 +71,7 @@
             <div class="fieldDiv">
                 <label for="destCity"  class="formLabel">City : <span class="etoile">*</span></label><br>
             </div>
-            <input type="text" name="ville" class="formInputText" id="destCity"><br>
+            <input type="text" name="vill" class="formInputText" id="destCity"><br>
 
             <div class="fieldDiv">
                 <label  class="formLabel">Images : <span class="etoile">*</span> </label><br>
@@ -103,7 +102,7 @@
             <div class="fieldDiv">
                 <label for="destWater" class="formLabel">Drinking water : </label><br>
             </div>
-            <textarea   name="eaupot" id="destWater" cols="30" rows="10" class="formInputTextarea"></textarea><br>
+            <input type="text"  name="eaupot" id="destWater" cols="30" rows="10" class="formInputTextarea"/><br>
 
             <div class="fieldDiv">
                 <label for="destGrocery" class="formLabel">Grocery : </label><br>
@@ -114,12 +113,12 @@
             <div class="fieldDiv">
                 <label for="destActivities" class="formLabel">Activities : </label><br>
             </div>
-            <textarea type="text" name="activite" id="destActivities" cols="30" rows="10" class="formInputTextarea"></textarea><br>
+            <textarea name="activite" id="destActivities" cols="30" rows="10" class="formInputTextarea"></textarea><br>
 
             <div class="fieldDiv">
                 <label for="destOther" class="formLabel">Other : </label><br>
             </div>
-            <textarea type="text" name="divers" id="destOther" cols="30" rows="10" class="formInputTextarea"></textarea><br>
+            <textarea name="divers" id="destOther" cols="30" rows="10" class="formInputTextarea"></textarea><br>
 
             <button class="cancelBtn">Cancel</button>
             <button class="submitBtn" type="submit">Save</button>

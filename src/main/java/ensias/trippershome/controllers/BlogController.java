@@ -29,6 +29,10 @@ public class BlogController {
     @RequestMapping(value= "/blogs")
     public String blogs(ModelMap model)
     {
+        if(Context.getUsername()==null)
+        {
+            return "redirect:/login";
+        }
          List<Blog> blog = blogService.getAll();
 
 
@@ -41,17 +45,21 @@ public class BlogController {
     @RequestMapping(value= "/add_blog" ,method = RequestMethod.GET)
     public String add(Model model)
     {
+        if(Context.getUsername()==null)
+        {
+            return "redirect:/login";
+        }
 
         return "addBlog";
     }
 
     @RequestMapping(value= "/add_blog" ,method = RequestMethod.POST)
-    public String add(ModelMap model, @RequestParam String titre,@RequestParam String sujet)
+    public String add(ModelMap model, @RequestParam String title,@RequestParam String sujet)
     {
 
 
         User user= userService.getByUsername(Context.getUsername());
-        Blog blog= new Blog(titre,sujet,user);
+        Blog blog= new Blog(title,sujet,user);
         blogService.save(blog);
 
 

@@ -39,14 +39,14 @@ public class UserController {
             String username = Context.getUsername();
             if (username==null)
             {
-                return "login";
+                return "redirect:/login";
             }
             else
             {
-                model.put("title", " Mes destinations");
+                model.put("title", " My destinations");
 
                 User user = userService.getByUsername(username);
-                List<Destination> destinationList =user.getDestinations();
+                List<Destination> destinationList =destinationService.getByUser(user);
                 if (destinationList == null) {
                     model.put("message", "list is empty");
                 }

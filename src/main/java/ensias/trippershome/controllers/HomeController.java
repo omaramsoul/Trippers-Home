@@ -1,5 +1,6 @@
 package ensias.trippershome.controllers;
 
+import ensias.trippershome.Security.Context;
 import ensias.trippershome.services.BlogService;
 import ensias.trippershome.services.DestinationService;
 import ensias.trippershome.services.impl.BlogServiceImpl;
@@ -20,7 +21,7 @@ public class HomeController {
         if (destinationService.getAll().size() > 3)
 
         model.put("destinations",destinationService.getAll());
-
+        model.put("user",Context.getUsername());
         model.put("blogs",blogService.getAll());
         return "index";
     }

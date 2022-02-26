@@ -1,0 +1,81 @@
+.imagesConatiner {
+    text-align: center;
+}
+
+.smallImagesContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.smallImg {
+    width: 100px;
+    cursor: pointer;
+}
+
+.starIcon {
+    width: 16px;
+    margin-top: -6px;
+    margin-left: 5px;
+}
+
+.rating {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+.stars {
+    background-color: black;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    margin-top: 0px;
+    padding: 8px 30px;
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.transport, .campaign, .drinkingWater, .grocery, .firewood, .activities, .other {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleValue {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 25px;
+    color: #7FB285;
+}
+
+.textValue {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.campaign .titleValue {
+    margin-right: 19px;
+}
+
+.drinkingWater, .grocery, .firewood, .activities, .other {
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+
+.secondDescription {
+    margin-top: 30px;
+}

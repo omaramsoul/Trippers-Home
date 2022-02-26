@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface DCommentRepository  {
     List<DComment>  findDCommentByDestination(Destination destination);
+    void save(DComment dcomment);
 }

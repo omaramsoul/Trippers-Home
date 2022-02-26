@@ -11,6 +11,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.FluentQuery;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.persistence.NoResultException;
 import java.util.List;
 import java.util.Optional;
@@ -30,5 +31,17 @@ public class DCommentRepositoryImpl implements DCommentRepository {
         {
             return null;
         }
+    }
+
+    @Override
+    public void save(DComment dcomment) {
+        EntityTransaction et = entityManager.getTransaction();
+
+        entityManager.createNativeQuery("INSERT INTO d_comments(ID,D_ID,comment) Values (:id,:d,:comment)")
+                .setParameter("id", dcomment.getUser().getId())
+                .setParameter("d", dcomment.getDestination().getId())
+                .setParameter("comment", dcomment.getComment())
+                .executeUpdate();
+        et.commit();
     }
 }

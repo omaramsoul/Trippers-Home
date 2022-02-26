@@ -15,4 +15,9 @@ public class DCommentServiceImpl implements DCommentService {
     public List<DComment> getByDestination(Destination dest) {
         return dCommentRepository.findDCommentByDestination(dest);
     }
+
+    @Override
+    public void save(DComment dcomment) {
+         dCommentRepository.save(dcomment);
+    }
 }

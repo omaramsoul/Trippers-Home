@@ -18,6 +18,11 @@
             <td><c:out value="${item.comment}" /></td>
         </tr>
     </c:forEach>
+
+    <form method="post">
+        <input type="text" name="comment" /><br>
+        <br>
+        <button>submit</button>
 </table>
 
 </body>

@@ -36,7 +36,7 @@
                 <a class="nav-link item" href="/destinations">Destinations</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link item" href="#">Bloog</a>
+                <a class="nav-link item" href="/blogs">Blog</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link item" href="#">Contact us</a>
@@ -58,8 +58,9 @@
             </c:when>
             <c:otherwise>
                 <form class="form-inline my-2 my-lg-0">
+                    <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="\destinations_favoris">Favoris</a></button>
+                    <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="\my_destinations">Mes destinations</a></button>
                     <button class="btn logBtn resgistration my-2 my-sm-0" type="submit"><a href="\logout">Logout</a> </button>
-                    <button class="btn resgistration btn-outline-success my-2 my-sm-0" type="submit"><a href="\destinations_favoris">favoris</a></button>
                 </form>
                 <!--                    <button><a href ="/">logout</a></button>-->
                 <!--                    <button><a href ="/destinations">destinations</a></button>-->
@@ -107,11 +108,11 @@
                 <img src="${pageContext.request.contextPath}/img/star.png" alt="star" class="star">
               </span>
                 </div>
-                <a href="#">
+                <a href="/destinations/<c:out value="${item.dNom}"/>">
                     <img src="${pageContext.request.contextPath}/dimg/<c:out value="${item.dNom}"/>.jpg" alt="Aguelmam Azegza" class="placeImage"><br>
                 </a>
             </div>
-            <a href="#" class="placeName"><c:out value="${item.DNom}" /> , <br> <c:out value="${item.dVille}" /> </a>
+            <a href="/destinations/<c:out value="${item.dNom}"/>" class="placeName"><c:out value="${item.DNom}" /> , <br> <c:out value="${item.dVille}" /> </a>
         </div>
             <%}%>
 

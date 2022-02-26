@@ -25,11 +25,20 @@ public class DComment {
     @Column(name = "comment")
     private String comment;
 
+    public DComment() {
+    }
+
     public String getComment() {
         return comment;
     }
 
     public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public DComment(User user, Destination destination, String comment) {
+        this.user = user;
+        this.destination = destination;
         this.comment = comment;
     }
 

@@ -31,9 +31,11 @@ public class DestinationController {
     @RequestMapping(value= "/destinations")
     public String destinations(ModelMap model)
     {
+        if(Context.getUsername()==null)
+            return "redirect:/login";
         List<Destination> destinationList = destinationService.getAll();
 
-         model.put("title", " Les destinations");
+         model.put("title", "Destinations");
             model.put("destinations",destinationList);
 
         if (destinationList == null) {
@@ -47,6 +49,12 @@ public class DestinationController {
     @RequestMapping(value= "/add_destination" ,method = RequestMethod.GET)
     public String add(Model model)
     {
+        if(Context.getUsername()==null)
+        {
+            return "redirect:/login";
+        }
+        if(Context.getUsername()==null)
+            return "login";
 
         return "addDestination";
     }
@@ -95,8 +103,12 @@ public class DestinationController {
 
     }
 
-    @RequestMapping(value= "/destinations/{name}")
+    @RequestMapping(value= "/destinations/{name}",method = RequestMethod.GET)
     public String destination_info(ModelMap model,  @PathVariable("name") String name){
+        if(Context.getUsername()==null)
+        {
+            return "redirect:/login";
+        }
         Destination destination= destinationService.getByName(name);
         model.put("destination",destination);
         List<DComment> comments =dCommentService.getByDestination(destination);
@@ -109,7 +121,24 @@ public class DestinationController {
 
 
     }
+    @RequestMapping(value= "/destinations/{name}",method = RequestMethod.POST)
+    public String add_comment(ModelMap model,  @PathVariable("name") String name,@RequestParam String comment){
+        Destination destination= destinationService.getByName(name);
+        DComment dcomment = new DComment( userService.getByUsername(Context.getUsername()),destination, comment);
+        dCommentService.save(dcomment);
+        model.put("destination",destination);
+        List<DComment> comments =dCommentService.getByDestination(destination);
+        model.put("comments",comments);
+        if (Context.getUsername()==null)
+        {
+            return "login";
+        }
 
+
+        return "destination";
+
+
+    }
 
 
 
