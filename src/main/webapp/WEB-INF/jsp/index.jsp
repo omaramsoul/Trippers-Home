@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/img/tent-2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/img/tent-2.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7cae05fcdc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/slogan.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/recommendedPlaces.css">
@@ -253,6 +253,28 @@
 
     </div>
 </div>
+<footer class="container-fluid footerContainer">
+    <div class="row">
+        <div class="footerLogo col-xl-12">
+            <img src="/img/tent-3.png" alt="" class="footerLogoVal">
+        </div>
+        <div class="linksDiv col-xl-12">
+            <a href="/" class="footerItem">Home</a>
+            <a href="/destinations" class="footerItem">Destinations</a>
+            <a href="/blogs" class="footerItem">Blogs</a>
+            <a href="#" class="footerItem">Trip partner</a>
+        </div>
+        <div class="iconsDiv col-xl-12">
+            <p class="stayIn">Stay in touch</p>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </div>
+        <div class="copyrights col-xl-12">
+            © Trippershome. All rights Reserved.
+        </div>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

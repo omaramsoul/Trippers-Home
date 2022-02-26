@@ -85,4 +85,26 @@
 </div>
 
 </body>
+<footer class="container-fluid footerContainer">
+  <div class="row">
+    <div class="footerLogo col-xl-12">
+      <img src="/img/tent-3.png" alt="" class="footerLogoVal">
+    </div>
+    <div class="linksDiv col-xl-12">
+      <a href="/" class="footerItem">Home</a>
+      <a href="/destinations" class="footerItem">Destinations</a>
+      <a href="/blogs" class="footerItem">Blogs</a>
+      <a href="#" class="footerItem">Trip partner</a>
+    </div>
+    <div class="iconsDiv col-xl-12">
+      <p class="stayIn">Stay in touch</p>
+      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </div>
+    <div class="copyrights col-xl-12">
+      © Trippershome. All rights Reserved.
+    </div>
+  </div>
+</footer>
 </html>

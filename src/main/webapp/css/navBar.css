@@ -102,3 +102,58 @@
     text-decoration: none;
 }
 
+footer {
+    background-color: black;
+}
+
+.footerContainer {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.footerLogoVal {
+    width: 50px;
+
+}
+
+.linksDiv {
+    margin-top: 20px;
+}
+
+.footerItem {
+    text-decoration: none;
+    color: rgb(204, 198, 198);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.footerItem:hover {
+    color: #FFC100;
+}
+
+.iconsDiv {
+    margin-top: 20px;
+}
+
+.stayIn {
+    color: rgb(204, 198, 198);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.fa-facebook-square, .fa-instagram , .fa-twitter-square{
+    color: rgb(204, 198, 198);
+    padding: 0px 5px;
+}
+
+.fa-facebook-square:hover, .fa-instagram:hover , .fa-twitter-square:hover {
+    cursor: pointer;
+    color: #FFC100;
+}
+
+.copyrights {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(204, 198, 198);
+}
