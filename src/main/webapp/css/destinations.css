@@ -45,3 +45,53 @@
 
 
 
+.blogBorder {
+    padding: 0px;
+    border: 1px solid #E1E1E1;
+}
+
+.blogImage {
+    width: 100%;
+}
+
+.blogTitle {
+    padding: 20px 30px;
+    padding-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.blogDescription {
+    padding: 0px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bolgsContainer {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.blogAuthor {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #37474F;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.creator {
+    color: #37474F;
+}
+
+.creatorDiv {
+    text-align: end;
+    padding-right: 20px;
+}
+
+a:hover{
+    color: #37474F;
+}

@@ -77,8 +77,9 @@
       </div>
       <textarea name="sujet" id="blogContent" cols="30" rows="10" class="formInputTextarea"></textarea><br>
 
+
       <button class="cancelBtn">Cancel</button>
-      <button class="submitBtn" type="submit">Save</button>
+      <button class="createBtn" type="submit">Create</button>
     </form>
   </div>
 </div>

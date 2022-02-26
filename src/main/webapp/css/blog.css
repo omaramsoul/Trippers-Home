@@ -46,3 +46,42 @@
     margin-left: 105px;
     margin-top: 15px;
 }
+
+.cancelBtn {
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    padding: 5px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-right: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+.cancelBtn:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+}
+
+.createBtn {
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    padding: 5px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.createBtn:hover {
+    background-color: green;
+    color: white;
+    transition: 0.3s;
+    font-weight: 500;
+}

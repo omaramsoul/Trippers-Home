@@ -1,0 +1,12 @@
+.fa-search, .fa-heart {
+    margin-right: 15px;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+    color: rgb(255, 95, 95);
+}
+
+.fa-search:hover, .fa-user-circle-o:hover {
+    cursor: pointer;
+}

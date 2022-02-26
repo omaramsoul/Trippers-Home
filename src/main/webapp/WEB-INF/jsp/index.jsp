@@ -218,9 +218,14 @@
 <div class="container titleContainer2">
     <p class="title">Blogs</p>
     <p class="description">Share your experience with the community</p>
+<br/>
+    <div class="btnContainer">
+        <button class="addDestBtn"><a href="/add_blog"> Add blog</a></button>
+    </div>
 </div>
 
 <div class="container bolgsContainer">
+
     <div class="row">
 
             <% int i=0;%>

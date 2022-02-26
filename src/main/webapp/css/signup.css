@@ -22,7 +22,7 @@
     font-family: 'Poppins', sans-serif ;
 }
 
-.signUpBtn {
+.signUpBtn2 {
     border: 1px solid #FF725E;
     border-radius: 50px;
     width: 150px;
@@ -34,7 +34,7 @@
     margin-bottom: 25px;
 }
 
-.signUpBtn:focus {
+.signUpBtn2:focus {
     outline: none;
 }
 

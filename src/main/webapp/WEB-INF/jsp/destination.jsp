@@ -77,7 +77,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="imagesConatiner col-xl-6">
+        <div class="imagesConatiner col-xl-12">
             <img src="${pageContext.request.contextPath}/dimg/<c:out value="${destination.dNom}"/>.jpg" alt="" class="smallImg">
         </div>
         <div class="detailsContainer col-xl-6">
@@ -167,6 +167,32 @@
                 <c:out value="${destination.DDivers}"/>
             </div>
         </div>
+        <div class="container titleContainer2">
+            <p class="title">Trippers reviews</p>
+            <p class="description">See what other trippers say about the destination</p>
+        </div>
+    </div>
+
+
+
+    <div class="container reviews">
+        <c:forEach items="${comments}" var="item">
+
+
+        <div class="row">
+            <div class="reviewContainer">
+                <div class="userPic">
+                    <a href="#"><img src="${pageContext.request.contextPath}/img/user 1.jpeg" alt="" class="userPicVal"></a>
+                </div>
+                <div class="userReview">
+                    <div class="userName">
+                        <a href="#"><c:out value="${item.user.username}" /></a>
+                    </div>
+                    <c:out value="${item.comment}" />
+                </div>
+            </div> <br>
+        </div>
+        </c:forEach>
 
     </div>
 </div>

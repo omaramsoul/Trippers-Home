@@ -36,7 +36,7 @@ public class BlogController {
          List<Blog> blog = blogService.getAll();
 
 
-        model.put("blog",blog);
+        model.put("blogs",blog);
 
 
       return "blogs";
