@@ -2,14 +2,11 @@ package ensias.trippershome.controllers;
 
 import ensias.trippershome.Security.Context;
 import ensias.trippershome.models.Blog;
-import ensias.trippershome.models.Destination;
 import ensias.trippershome.models.User;
-import ensias.trippershome.repositories.BlogRepository;
 import ensias.trippershome.services.BlogService;
 import ensias.trippershome.services.UserService;
 import ensias.trippershome.services.impl.BlogServiceImpl;
 import ensias.trippershome.services.impl.UserServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;

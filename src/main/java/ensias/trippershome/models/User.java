@@ -24,7 +24,7 @@ public class User {
     @Column(name = "MDP", nullable = false, length = 50)
     private String mdp;
 
-    @Column(name = "TELE", nullable = false)
+    @Column(name = "TELE")
     private Integer tele;
 
     @Column(name = "BIRTHDAY")

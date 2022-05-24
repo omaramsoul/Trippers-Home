@@ -62,7 +62,7 @@
 
 <div class="container imageConatiner">
     <div class="row">
-        <form action="#" class="col-xl-12 formDestContainer" method="post">
+        <form action="add_destination" class="col-xl-12 formDestContainer" method="post">
 
             <div class="fieldDiv">
                 <label for="destName" class="formLabel">Destination name : <span class="etoile">*</span></label><br>
