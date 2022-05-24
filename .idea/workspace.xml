@@ -5,32 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0c0fe9b-62b3-4cb5-a0fe-e2d5cf790b9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/repositories/impl/RoleRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/services/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/services/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/navBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Travelers-bro.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/Travelers-bro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hamburger.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/hamburger.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tent-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/tent-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tent-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/tent-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tripLogin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/img/tripLogin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/Security/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/Security/Validate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/DestinationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/DestinationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/repositories/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/destinations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/destinations.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ensias/trippershome/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ensias/trippershome/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addDestination.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/addDestination.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/Security/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/Security/Context.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/Security/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/Security/Validate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/TrippershomeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/TrippershomeApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/TrippershomeApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/BlogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/DestinationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/DestinationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Annonce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Annonce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Blog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/DComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/DComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Destination.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Destination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/AnnonceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/AnnonceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/BlogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/BlogRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/Connection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/DCommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/DCommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/DestinationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/DestinationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/RoleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/AnnonceRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/AnnonceRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/BlogRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/BlogRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/DCommentRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/DCommentRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/DestinationRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/DestinationRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/RoleRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/RoleRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/repositories/impl/UserRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/BlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/DCommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/DCommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/DestinationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/DestinationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/BlogServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/DCommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/DCommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/DestinationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/DestinationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ensias/trippershome/services/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,28 +107,43 @@
       </map>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="24LLnkyVOaU1rkrxAXFwSYPgYf0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/HP/Desktop/SpringProject",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -119,28 +162,32 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TrippershomeApplication (1)">
-    <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="TrippershomeApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="trippershome" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ensias.trippershome.TrippershomeApplication" />
+  <component name="RunManager" selected="Spring Boot.TrippershomeApplication">
+    <configuration name="All in SpringProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrippershomeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="TrippershomeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SpringProject" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ensias.trippershome.TrippershomeApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ensias.trippershome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests#1" />
+        <item itemvalue="Spring Boot.TrippershomeApplication" />
+        <item itemvalue="JUnit.All in SpringProject" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +231,8 @@
       <workItem from="1645545101661" duration="4687000" />
       <workItem from="1645554593959" duration="44000" />
       <workItem from="1645554708390" duration="5758000" />
+      <workItem from="1653335936556" duration="1121000" />
+      <workItem from="1653337146346" duration="15252000" />
     </task>
     <servers />
   </component>
@@ -200,6 +249,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

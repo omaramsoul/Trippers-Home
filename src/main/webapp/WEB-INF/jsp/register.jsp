@@ -59,7 +59,7 @@
         </div>
         <div class="signUpForm col-xl-6 col-md-6 col-sm-6 col-12">
             <p class="signText signTextUp">Welcome home Tripper</p>
-            <form action="#" method="post">
+            <form action="register" method="post">
                 <input type="text" name="username" placeholder="First name" class="inputField"><br>
                 <input type="email" name="email" placeholder="Email" class="inputField"><br>
                 <input type="password" name="password" placeholder="Password" class="inputField"><br>

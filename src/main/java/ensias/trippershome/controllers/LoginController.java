@@ -1,22 +1,19 @@
 package ensias.trippershome.controllers;
 
 import ensias.trippershome.Security.Context;
-import ensias.trippershome.models.Blog;
 import ensias.trippershome.models.User;
-
 import ensias.trippershome.services.BlogService;
 import ensias.trippershome.services.DestinationService;
 import ensias.trippershome.services.UserService;
 import ensias.trippershome.services.impl.BlogServiceImpl;
 import ensias.trippershome.services.impl.DestinationServiceImpl;
 import ensias.trippershome.services.impl.UserServiceImpl;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller

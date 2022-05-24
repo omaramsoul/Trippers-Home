@@ -7,7 +7,6 @@ import ensias.trippershome.services.impl.BlogServiceImpl;
 import ensias.trippershome.services.impl.DestinationServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
