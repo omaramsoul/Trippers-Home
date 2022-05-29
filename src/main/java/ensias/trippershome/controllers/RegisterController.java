@@ -1,6 +1,7 @@
 package ensias.trippershome.controllers;
 
 import ensias.trippershome.Security.Context;
+import ensias.trippershome.Security.Validate;
 import ensias.trippershome.models.User;
 import ensias.trippershome.services.RoleService;
 import ensias.trippershome.services.UserService;
@@ -40,17 +41,17 @@ public class RegisterController {
         user.setEmail(email);
         user.setMdp(password);
 
-       // String message = Validate.accept(user,password2);
-//        if (message !=null)
-//        {
-//            model.put("msg",message);
-//            return "register";
-//        }else {
+       String message = Validate.accept(user,password2);
+        if (message !=null)
+        {
+            model.put("msg",message);
+            return "register";
+        }else {
             userService.save(user);
 
             Context.setUsername(username);
             return "index";
-//        }
+       }
     }
 
 }

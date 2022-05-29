@@ -42,7 +42,7 @@ public class UserRepositoryImpl implements UserRepository {
                 .setParameter("email", user.getEmail())
                 .setParameter("mdp", user.getMdp())
                 .executeUpdate();
-          et.commit();
+
         }catch(Exception e)
         {
             for (int i=0;i<10;i++)

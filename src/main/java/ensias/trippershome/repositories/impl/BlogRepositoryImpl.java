@@ -37,10 +37,14 @@ public class BlogRepositoryImpl implements BlogRepository {
 
         entityManager.createNativeQuery("INSERT INTO blog(TITRE,ID,SUJET) Values (:titre,:id,:sujet)")
                 .setParameter("titre", blog.getTitre())
-                .setParameter("id", blog.getId1().getId())
+                .setParameter("id",
+                        blog.getId1()
+                                .getId()
+                )
                 .setParameter("sujet", blog.getSujet())
                 .executeUpdate();
-        et.commit();
+
+//        et.commit();
 
     }
 

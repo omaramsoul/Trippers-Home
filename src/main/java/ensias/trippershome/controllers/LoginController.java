@@ -38,7 +38,7 @@ public class LoginController {
 
         if (user==null || !user.getMdp().equals(password))
         {
-            model.put("errorMsg","the username and the password are incorrect");
+            model.put("errorMsg","the username or the password is incorrect");
             return "login";
         }
         else

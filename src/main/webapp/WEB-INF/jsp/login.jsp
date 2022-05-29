@@ -59,8 +59,9 @@
               <form action="#" method="post">
                 <input type="text" name="username" placeholder="Username" class="inputField"><br>
                 <input type="password" name="password" placeholder="Password" class="inputField"><br>
-                  <h2>${errorMsg}</h2>
+                  <h2 style="color: red;font-size: 14px;margin-bottom: 10px">${errorMsg}</h2>
                 <button class="loginBtn" type="submit" value="Submit">Login</button><br>
+              </form>
               </form>
               <p class="loginText loginTextDown">Don't have account ? <a href="/register" class="signUpField">Sign up</a></p>
             </div>

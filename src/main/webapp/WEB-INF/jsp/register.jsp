@@ -64,7 +64,8 @@
                 <input type="email" name="email" placeholder="Email" class="inputField"><br>
                 <input type="password" name="password" placeholder="Password" class="inputField"><br>
                 <input type="password" name="password2" placeholder="Password" class="inputField"><br>
-                <button class="signUpBtn" type="submit" value="Submit">Sign up</button><br>
+                <h2 style="color: red;font-size: 14px;margin-bottom: 10px">${msg}</h2>
+                <button class="loginBtn" type="submit" value="Submit">Sign up</button><br>
             </form>
             <p class="signText signTextDown">Already have account ? <a href="/login" class="loginField">Login</a></p>
         </div>

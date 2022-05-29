@@ -18,13 +18,13 @@ public class Destination {
     @Column(name = "D_VILLE", nullable = false, length = 100)
     private String dVille;
 
-    @Column(name = "LOCAL_LA", nullable = false)
+    @Column(name = "LOCAL_LA")
     private Double localLa;
 
-    @Column(name = "LOCAL_LO", nullable = false)
+    @Column(name = "LOCAL_LO")
     private Double localLo;
 
-    @Column(name = "D_IMG_1", nullable = false)
+    @Column(name = "D_IMG_1")
     private byte[] dImg1;
 
     @Column(name = "D_IMG_2")
@@ -60,24 +60,10 @@ public class Destination {
     @Column(name = "D_DATE_CR", nullable = false)
     private Instant dDateCr;
 
-    public List<DComment> getComments() {
-        return comments;
-    }
-
-    public void setComments(List<DComment> comments) {
-        this.comments = comments;
-    }
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "ID", nullable = false)
     private User id1;
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "DCOMMENT",
-            joinColumns = @JoinColumn(
-                    name = "D_ID", referencedColumnName = "D_ID")
-    )
-    private List<DComment> comments ;
     public User getId1() {
         return id1;
     }
